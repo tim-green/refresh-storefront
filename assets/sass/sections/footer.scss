@@ -1,0 +1,25 @@
+/*
+
+  Footer
+  +
+
+*/
+
+
+/* Footer Area*/
+.site-footer{
+	border-top: 1px solid $lighter-grey;
+	padding-bottom: 0;
+}
+.woocommerce-cart .site-footer,
+.woocommerce-checkout .site-footer{
+	border: none;
+	padding-top: 0;
+}
+.footer-widgets{
+	border: none;
+	padding: 30px 0 0;
+}
+.site-footer .credits-area{
+	text-align: center;
+}

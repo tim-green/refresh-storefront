@@ -1,0 +1,159 @@
+/*
+
+  Responsive
+  +
+
+*/
+
+/* Media */
+@media screen and (max-width: 1199px) {
+    .col-full {
+        margin-left: 2.618em;
+        margin-right: 2.618em;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    /* Header Area*/
+       .woocommerce-active .site-branding, 
+       .woocommerce-active .site-logo-anchor,
+        .woocommerce-active .custom-logo-link, .woocommerce-active .site-branding, .woocommerce-active .site-logo-anchor, .woocommerce-active .site-logo-link{
+           float: none!important;
+           margin: 0;
+           text-align: center;
+           width: 100%!important;
+       }
+        .site-header .custom-logo-link img, .site-header .site-logo-anchor img, .site-header .site-logo-link img{
+            max-width: 210px;
+            margin: 0 auto;
+        }
+       .navigation-area{
+           border-top: 1px solid $lighter-grey;
+        margin-top: 0;
+        float: none;
+        width: 100%;
+       }
+       .woocommerce-active .site-header .main-navigation{
+           padding: 0;
+       }
+    .woocommerce-active .site-header .site-header-cart {
+        max-width: 200px;
+    }
+    .woocommerce-active .site-header .site-header-cart{
+        padding: 20px 0 0;
+    }
+    .site-header-cart .cart-contents{
+        padding: 0 0 20px 1em!important;
+    }
+    .navigation-area{
+        text-align: center;
+    }
+    .woocommerce-active .site-header .site-header-cart{
+        float: none;
+        display: inline-block;
+        padding-top: 0;
+        vertical-align: top;
+    }
+    .site-header-cart .cart-contents {
+        padding: 10px !important;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    .page-template-template-fullwidth-php .content-area, .page-template-template-homepage-php .content-area{
+        width: 73.9130434783%!important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+       /* 
+    Header Area */
+    .woocommerce-active .site-header .main-navigation{
+        border-right: none;
+        padding: 0;
+    }
+    .woocommerce-active .site-header .site-header-cart{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    .site-header-cart .cart-contents::after{
+        position: absolute!important;
+    }
+    .woocommerce-active .site-branding, 
+    .woocommerce-active .site-logo-anchor{
+        text-align: left;
+    }
+    .site-header-cart .cart-contents{
+        margin-top: 20px;
+    }
+    .navigation-area {
+        border-top: medium none;
+        float: none;
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .menu-toggle{
+        margin: 0;
+    }
+    .main-navigation ul{
+        margin-bottom: 0;
+    }
+    .main-navigation[role="navigation"] ul ul,
+    .main-navigation[role="navigation"] ul li.ccadm-hover > ul,
+    .main-navigation[role="navigation"] ul a:focus+ul{
+        margin-left: 20px!important;
+    }
+    .main-navigation ul li a:focus{
+        outline-color: $white;
+    }
+    /* Banner Area */
+    #banner-area{
+        text-align: center;
+    }
+    #banner-area .product-slider .banner-product-image{
+        display: none;
+    }
+    #banner-area .product-slider .banner-product-details{
+        width: 100%;
+    }
+
+    /* WooCommerce Area*/
+    .site-main .storefront-product-categories .columns-3 ul.products li.product{
+        max-width: 100%;
+    }
+    ul.products li.product{
+        max-width: 300px;
+        margin-left: auto!important;
+        margin-right: auto;
+    }
+    ul.products li.product .onsale{
+        @include fontSize(12px);
+    }
+    .navigation-area #searchform{
+        display: none;
+    }
+    .site-header-cart .widget_shopping_cart{
+        display: none;
+    }
+
+    /* Sidebar Area*/
+    .right-sidebar .content-area,
+    .right-sidebar .widget-area,
+    .left-sidebar .content-area,
+    .left-sidebar .widget-area {
+        width: 100%;
+}
+
+/* Blog Area */
+    article .blog-thumb{
+        float: none;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    article .post-content-area {
+        margin-left: 0;
+    }
+}

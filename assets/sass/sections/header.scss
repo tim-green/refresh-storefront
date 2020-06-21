@@ -1,0 +1,181 @@
+/*
+
+  Header
+  +
+
+*/
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"],.select2-container .select2-choice > .select2-chosen, textarea, .input-text {
+    border: 1px solid $lighter-grey;
+    box-shadow: none;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.select2-container .select2-choice{
+	padding: 0;
+}
+.input-text, .select2-container .select2-choice > .select2-chosen ,input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea,#payment .payment_methods > li .payment_box, #payment .place-order {
+    background-color:$off-white;
+    border: 0 none;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) inset;
+    box-sizing: border-box;
+    color: $soft-black;
+    font-weight: 400;
+    outline: 0 none;
+    padding: 0.618em;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .added_to_cart{
+	box-shadow: none;
+	outline: none!important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+	font-family: $roboto-slab;
+  @include fontSize(16px);
+	font-weight: 300;
+}
+
+.clearfix{
+	clear: both;
+	display: block;
+}
+
+
+.overlay{
+	background: rgba(233, 232, 227, 0.9) none repeat scroll 0 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.table {
+	display: table;
+	height: 100%;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.table-cell {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+.hentry{
+	border-bottom: 1px solid $lighter-grey;
+}
+#respond{
+	border-top: 1px solid $lighter-grey;
+}
+.fa:before  { 
+  font-family: FontAwesome;
+}
+
+.fa-facebook:before{
+	content: "\f09a"; 
+}
+.fa-twitter:before{
+	content: "\f099";
+}
+.fa-google-plus:before{
+	content: "\f0d5";
+}
+.fa-pinterest:before{
+	content: "\f0d2";
+}
+.fa-linkedin:before{
+	content: "\f0e1";
+}
+.fa-youtube:before{
+	content: "\f167";
+}
+.fa-tumblr:before{
+	content: "\f173";
+}
+.fa-instagram:before{
+	content: "\f16d";
+}
+.fa-flickr:before{
+	content: "\f16e";
+}
+.fa-vimeo-square:before{
+	content: "\f194";
+}
+.fa-rss:before{
+	content: "\f09e";
+}
+.fa-search:before{
+	content: "\f002";
+}
+.col-full{
+	max-width: 1170px;
+}
+table th,table tbody td,#payment .payment_methods li,#comments .comment-list .comment-content .comment-text,.order_details,.order_details:before, .order_details:after{
+	background: none!important;
+}
+table tbody tr:nth-child(2n) td{
+	background:$grey;
+}
+table.cart td.actions{
+	border-top: 1px solid $lighter-grey;
+	padding-top: 20px;
+}
+
+
+/*Header*/
+
+header.site-header{
+	padding: 0;
+	margin: 0!important;
+}
+header button.menu-toggle{
+	width: 100%;
+}
+header .top-area{
+	border-bottom: 1px solid $dark-black;
+	text-align: right;
+}
+header .social-media,
+header .second-nav{
+	padding: 10px 0;
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+}
+header .social-media .social-tw{
+	display: inline-block;
+    margin: 0 0 0 10px;
+    text-align: center;
+}
+header .social-media .social-tw .fa{
+  @include fontSize(14px);
+}
+header .second-nav{
+	text-align: right;
+	border-right: 1px solid $dark-black;
+}
+header .second-nav ul{
+	margin: 0;
+	list-style: none;
+}
+header .second-nav ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+header .second-nav ul li a{
+	color: inherit;
+  @include fontSize(12px);
+	font-weight: 300;
+}

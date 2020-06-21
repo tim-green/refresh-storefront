@@ -1,0 +1,304 @@
+/*
+
+  Components
+  +
+
+*/
+
+
+.main-navigation{
+	padding-top: 0;
+}
+.main-navigation ul.menu ul li a, .main-navigation ul.nav-menu ul li a{
+	color: inherit;
+}
+.main-navigation ul ul,  .secondary-navigation ul ul,  .main-navigation ul.menu > li.menu-item-has-children::after,  .secondary-navigation ul.menu ul,  .main-navigation ul.menu ul,  .main-navigation ul.nav-menu ul{
+	background-color: $white;
+}
+.site-header .site-logo-link{
+	padding: 25px 0;
+}
+.site-branding p.site-title {
+    font-size: 1.618em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.214;
+    margin: 0;
+}
+.site-branding p.site-title a{
+	font-weight: 700;
+}
+.woocommerce-active .site-header .main-navigation{
+    margin: 0;
+    padding: 0;
+    width: 100%!important;
+}
+.woocommerce-active .site-header .site-header-cart{
+	text-align: center;
+	padding: 0;
+}
+.site-header-cart .widget_shopping_cart{
+	display: block;
+	
+}
+.widget_shopping_cart_content{
+	text-align: left;
+}
+.widget_shopping_cart_content .buttons a.button{
+	margin-top: 10px;
+}
+.site-header-cart .cart-contents{
+	padding: 0 1em 40px;
+}
+.site-header .site-branding, 
+.site-header .site-logo-anchor{
+	margin-bottom: 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.site-title a{
+  @include fontSize(35px);
+	text-transform: none;
+}
+.main-navigation ul.menu > li > a, 
+.main-navigation ul.nav-menu > li > a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.main-navigation ul.menu li a{
+	font-weight: 700;
+}
+.site-header .custom-logo-link, .site-header .site-branding, .site-header .site-logo-anchor, .site-header .site-logo-link{
+	margin-right: 0;
+	margin-bottom: 0;
+}
+.site-header .custom-logo-link img, .site-header .site-branding img, .site-header .site-logo-anchor img, .site-header .site-logo-link img{
+	padding: 18px 0;
+}
+.navigation-area{
+	float: left;
+	width: 69.9%;
+	text-align: right;
+	padding: 24px 0;
+}
+.navigation-area #searchform{
+	display: inline-block;
+	position: relative;
+  @include fontSize(14px);
+	margin-right: 20px;
+	margin-bottom: 0;
+	overflow: hidden;
+	width: 400px;
+}
+.navigation-area #searchform input[type="text"]{
+	height: 46px;
+	width: 100%;
+}
+.navigation-area #searchform button{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: $light-black;
+    @include fontSize(14px);
+    padding: 13px 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.site-header-cart .cart-contents{
+	padding: 10px!important;
+}
+.main-navigation ul li a{
+  @include fontSize(16px);
+	font-weight: 300;
+}
+.site-header-cart .cart-contents::after{
+	position: static!important;
+}
+.site-header .widget_shopping_cart li, .site-header .widget_shopping_cart p.buttons, .site-header .widget_shopping_cart p.total{
+	padding: 10px!important;
+}
+.site-header-cart .buttons a.button{
+	display: block;
+	width: 100%;
+}
+.main-navigation[role="navigation"] ul ul {
+	display: block !important;
+	margin-left:-9999px !important;
+}
+
+.main-navigation[role="navigation"] ul li:hover > ul,
+.main-navigation[role="navigation"] ul li.ccadm-hover > ul,
+.main-navigation[role="navigation"] ul a:focus+ul {
+	margin-left:0 !important;
+}
+.storefront-breadcrumb{
+	margin: 0;
+	padding: 0;
+}
+.woocommerce-products-header__title{
+	display: none;
+}
+.storefront-full-width-content .woocommerce-products-header, .storefront-full-width-content.woocommerce-account .entry-header, .storefront-full-width-content.woocommerce-cart .entry-header, .storefront-full-width-content.woocommerce-checkout .entry-header{
+	padding: 0;
+	margin: 0;
+}
+.site-header .custom-logo-link, .site-header .site-branding, .site-header .site-logo-anchor, .site-header .site-logo-link{
+	width: 25.73913%;
+}
+.woocommerce-active .site-header .custom-logo-link, .woocommerce-active .site-header .site-branding, .woocommerce-active .site-header .site-logo-anchor, .woocommerce-active .site-header .site-logo-link{
+	width: 25.73913%;
+}
+
+#banner-area{
+	background-position: center center;
+    background-size: cover;
+    padding: 60px 0 80px;
+    position: relative;
+}
+#banner-area .flexslider{
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+#banner-area .product-slider .banner-product-image,
+#banner-area .product-slider .banner-product-details{
+	padding: 10px;
+}
+#banner-area .product-slider .banner-product-image{
+	float: right;
+	text-align: right;
+	width: 40%;
+	position: relative;
+}
+#banner-area .product-slider .banner-product-image img{
+	display: inline-block;
+}
+#banner-area .product-slider .banner-product-details{
+	float: left;
+	width: 60%;
+}
+#banner-area .product-slider .banner-product-details h3{
+	color:$light-black;
+	font-size: 30px;
+	text-transform: none;
+}
+#banner-area .product-slider .banner-product-details .price{
+  @include fontSize(24px);
+	font-weight: 500;
+}
+#banner-area .product-slider .banner-product-details p{
+	color: $light-black;
+}
+#banner-area .product-slider .banner-product-details .onsale{
+	color: $white;
+	border-color: $white;
+}
+#banner-area .product-slider .banner-product-details a{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    margin-top: 30px;
+}
+#banner-area .flex-control-nav li{
+	margin: 0 2px;
+}
+#banner-area .flex-control-paging li a{
+	background-color: $white;
+	height: 8px;
+	width: 8px;
+}
+#banner-area .onsale {
+    background-color: $light-black;
+    border: medium none;
+    color: $white !important;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+    padding: 0.202em 0.618em;
+    position: absolute;
+    right: 10px;
+    text-transform: uppercase;
+    top: 10px;
+}
+.site-header-cart .cart-contents::after{
+	padding: 0;
+}
+
+.page-template-template-homepage .site-main,
+.page-template-template-homepage .content-area{
+	margin-bottom: 0;
+}
+
+.site-main .storefront-product-categories .columns-3 ul.products li.product{
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.site-main .storefront-product-categories .columns-3 ul.products li.product .cat-details h3{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.site-main .storefront-product-categories .columns-3 ul.products li.product:hover .cat-details{
+	-webkit-transform: scale(1.05, 1.05);
+	-moz-transform: scale(1.05, 1.05);
+	-o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+.site-main .storefront-product-categories .columns-3 ul.products li.product:last-child{
+	margin-right: 0!important;
+}
+.site-main .storefront-product-categories .columns-3 ul.products li.product .cat-details{
+	display: block;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    height: auto;
+    width: 100%;
+}
+.site-main .storefront-product-categories .columns-3 ul.products li.product img{
+	margin: 0 auto;
+}
+.site-main .storefront-product-categories .columns-3 ul.products li.product a{
+	z-index: 2;
+}
+.site-main .storefront-product-categories .columns-3 ul.products li.product h3{
+	color: $white;
+	margin: 0;
+  padding: 0 15px;
+  @include fontSize(24px);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.site-main .storefront-product-categories .overlay{
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+}
+.storefront-product-section .section-title{
+  @include fontSize(30px);
+	text-transform: none;
+	margin-bottom: 50px;
+	text-align: left!important;
+
+}
+.storefront-product-section:last-child{
+	border-bottom: none!important;
+	margin-bottom: 0;
+}
+.storefront-product-section ul.products{
+	margin-bottom: 0;
+}
+.storefront-product-section{
+	 border-bottom: 1px solid $lighter-grey!important;
+}
+.page-template-template-homepage .type-page{
+    margin-left: 0!important;
+    width: 100%!important;
+}
+.left-sidebar.page-template-template-homepage .widget-area, .right-sidebar.page-template-template-homepage .widget-area {
+    padding-top: 4.236em;
+}
+.page-template-template-fullwidth-php .content-area, .page-template-template-homepage-php .content-area{
+    padding-top: 4.236em;
+}
